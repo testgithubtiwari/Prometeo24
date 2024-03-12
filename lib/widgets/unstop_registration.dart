@@ -1,0 +1,86 @@
+import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:fluttertoast/fluttertoast.dart';
+import 'package:url_launcher/url_launcher.dart';
+
+// ignore: must_be_immutable
+class UnstopRegistration extends StatefulWidget {
+  String unstopLink;
+  UnstopRegistration({required this.unstopLink, super.key});
+
+  @override
+  State<UnstopRegistration> createState() => _UnstopRegistrationState();
+}
+
+class _UnstopRegistrationState extends State<UnstopRegistration> {
+  @override
+  Widget build(BuildContext context) {
+    final Size size = MediaQuery.of(context).size;
+    return Column(
+      children: [
+        const SizedBox(
+          height: 30,
+        ),
+        Container(
+          alignment: Alignment.centerLeft,
+          child: Text(
+            "Registration",
+            style: GoogleFonts.poppins(
+              fontSize: 20,
+              color: Colors.white,
+              fontWeight: FontWeight.w600,
+            ),
+          ),
+        ),
+        const SizedBox(
+          height: 30,
+        ),
+        Container(
+          width: size.width * 0.9,
+          height: size.height / 14,
+          padding: EdgeInsets.only(
+            left: MediaQuery.of(context).size.width * 0.05,
+            right: MediaQuery.of(context).size.width * 0.05,
+          ),
+          decoration: BoxDecoration(
+            color: const Color(0xff003959),
+            borderRadius: BorderRadius.circular(15),
+          ),
+          child: TextButton(
+            onPressed: () async {
+              Uri url = Uri.parse(widget.unstopLink);
+              try {
+                if (await canLaunchUrl(url)) {
+                  await launchUrl(
+                    url,
+                    mode: LaunchMode.externalApplication,
+                  );
+                } else {
+                  throw "Could not launch $url['url']";
+                }
+              } catch (e) {
+                // Handle the exception here, and show an error toast to the user.
+                Fluttertoast.showToast(
+                  msg: "Error: $e",
+                  toastLength: Toast.LENGTH_SHORT,
+                  gravity: ToastGravity.BOTTOM,
+                  timeInSecForIosWeb: 1,
+                  backgroundColor: Colors.red,
+                  textColor: Colors.white,
+                );
+              }
+            },
+            child: Text(
+              "Register",
+              style: GoogleFonts.poppins(
+                color: Colors.white,
+                fontSize: 20,
+                fontWeight: FontWeight.w600,
+              ),
+            ),
+          ),
+        )
+      ],
+    );
+  }
+}

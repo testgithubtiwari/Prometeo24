@@ -1,0 +1,99 @@
+{
+  "project_info": {
+    "project_number": "598948981790",
+    "firebase_url": "https://prometeo24-default-rtdb.firebaseio.com",
+    "project_id": "prometeo24",
+    "storage_bucket": "prometeo24.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:598948981790:android:5d8294f4538b20ad03920f",
+        "android_client_info": {
+          "package_name": "com.example.frontend"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "598948981790-1tp6d3qeajes7r2jqgh5lvvp0blql14r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.frontend",
+            "certificate_hash": "c791c71c6cd1514151f95bb2a75ec9b8fb2d065a"
+          }
+        },
+        {
+          "client_id": "598948981790-ln6q76h4ah5frb9kgmciqaoqi65al8oq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1swIkmpTYhYnxmU1TLhWjP5yHNwiSgAw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "598948981790-ln6q76h4ah5frb9kgmciqaoqi65al8oq.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "598948981790-j7kajj92lk3jdbt40n9l0difbcpv7krp.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.frontend.RunnerTests"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:598948981790:android:a62382971c6c1b3703920f",
+        "android_client_info": {
+          "package_name": "com.promete24.iitj"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "598948981790-825u22k4q6ak46ikpksfkrjd3migul13.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.promete24.iitj",
+            "certificate_hash": "c791c71c6cd1514151f95bb2a75ec9b8fb2d065a"
+          }
+        },
+        {
+          "client_id": "598948981790-ln6q76h4ah5frb9kgmciqaoqi65al8oq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1swIkmpTYhYnxmU1TLhWjP5yHNwiSgAw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "598948981790-ln6q76h4ah5frb9kgmciqaoqi65al8oq.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "598948981790-j7kajj92lk3jdbt40n9l0difbcpv7krp.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.frontend.RunnerTests"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
